@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+*{  margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+/* navbar styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px 0 ;
+    transition: all 0.3s ease;
+}
+.navbar .logo a{
+    font-size: 35px;
+    color: bisque;
+    font-weight: 600 ;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li a{
+    color: aquamarine;
+    font-size: 10px ;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease ;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+
+}
+.navbar.sticky{
+    padding: 15px 0 ;
+    background: crimson;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+/*Menu btn styling*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px; 
+    cursor: pointer;
+    display: none;
+}
+
+/*Home section Styling*/
+.home{
+    display: flex;
+    background: url("images/wp3311642.jpg") no-repeat center ;
+    height: 100vh;
+    color: bisque;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color:crimson ;
+    font-weight: 500;
+}
+/*Responsive media query start*/
+@media (max-width:999px){
+    .menu-btn{
+        display: block;
+        z-index: 999 ;
+    }
+.max-width{
+    padding: 0 50px;
+}
+.navbar .menu{
+    position: fixed;
+    height: 100vh;
+    width:100% ;
+    left: -100;
+    top:0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition:all 0.3s ease ;
+}
+.navbar .menu.active{
+left: 0;
+}
+.navbar .menu li{
+    display: block;
+}
+.navbar .menu li a{
+    display:inline-block;
+    margin: 20px;
+    font-size: 25px;
+}
+
+
+
+
+
+
